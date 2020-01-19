@@ -25,6 +25,10 @@ pub fn (app mut App) json_endpoint() {
 	app.vweb.json('{"a": 3}')
 }
 
+pub fn (app mut App) json2() {
+	app.vweb.json('{"array": ["complex"], "xml": "none", "data": {"complex": true}}')
+}
+
 pub fn (app mut App) index() {
 	app.cnt++
 	$vweb.html()
