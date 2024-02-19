@@ -6,6 +6,7 @@ func main() {
 	f0001println()
 	f0002()
 	f0003()
+	f0004()
 }
 
 // Print out some text
@@ -35,6 +36,27 @@ func f0003() {
 	}
 
 	println(fmt.Sprintf("sum num %d", b))
+}
+
+// Create a 3x3 matrix, fill in 1 to 9 then print out
+func f0004() {
+	a := make([][]int, 3)
+	for i := 0; i < 3; i++ {
+		a[i] = make([]int, 3)
+	}
+
+	for i := 0; i < 3; i++ {
+		for j := 0; j < 3; j++ {
+			a[i][j] = (i * 3) + j + 1
+		}
+	}
+
+	for i := 0; i < 3; i++ {
+		for j := 0; j < 3; j++ {
+			fmt.Printf("%d,", a[i][j])
+		}
+		fmt.Printf("\n")
+	}
 }
 
 func onePlusOne() int {
