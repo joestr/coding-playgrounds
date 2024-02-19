@@ -36,3 +36,7 @@ func f0003() {
 
 	println(fmt.Sprintf("sum num %d", b))
 }
+
+func onePlusOne() int {
+	return 1 + 1
+}
