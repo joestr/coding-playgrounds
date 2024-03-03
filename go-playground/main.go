@@ -7,6 +7,7 @@ func main() {
 	f0002()
 	f0003()
 	f0004()
+	f0005()
 }
 
 // Print out some text
@@ -57,6 +58,14 @@ func f0004() {
 		}
 		fmt.Printf("\n")
 	}
+}
+
+// Shift bits
+func f0005() {
+	var firstBits = 0b00001001
+	var secondBits = 0b00000011
+	var resultBits = firstBits >> secondBits
+	fmt.Printf("Shift bits: %d >> %d = %d", firstBits, secondBits, resultBits)
 }
 
 func onePlusOne() int {
